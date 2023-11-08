@@ -1,0 +1,26 @@
+﻿<Window x:Class="ToDo.inputObaveza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Obaveza" Height="271" Width="283" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Content="Unos podataka o obavazi" Grid.ColumnSpan="2" HorizontalAlignment="Center" Name="label1" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+        <Label Content="Naziv obaveze" Grid.Row="1" Height="28" HorizontalAlignment="Right" Name="label2" VerticalAlignment="Center" />
+        <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left"  Name="txtNazivObaveze" VerticalAlignment="Center" Width="120" />
+        <Label Content="Opis obaveze" Grid.Row="2" Height="28" HorizontalAlignment="Right" Name="label3" VerticalAlignment="Center" />
+        <TextBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Left" Name="txtOpisObaveze" VerticalAlignment="Center" Width="120" />
+        <CheckBox Content="Završena" Grid.Row="3" Height="16" HorizontalAlignment="Left" Name="chkStatusObaveze" VerticalAlignment="Center" Grid.Column="1" />
+        <Button Content="Snimi" Grid.Row="4" Height="23" HorizontalAlignment="Right" Name="btnSnimi" VerticalAlignment="Center" Width="75" Margin="10 0" Click="btnSnimi_Click" />
+        <Button Content="Odustani" Grid.Column="1" Grid.Row="4" Height="23" HorizontalAlignment="Left" Name="btnOdustani" VerticalAlignment="Center" Width="75" Margin="10 0" Click="btnOdustani_Click" />
+    </Grid>
+</Window>
